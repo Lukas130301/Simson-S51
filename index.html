@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,8 @@
 <title>Simson S51 | WP Performance</title>
 
 <style>
+
+/* GRUNDEINSTELLUNGEN */
 
 * {
     margin: 0;
@@ -19,8 +22,8 @@ html {
 }
 
 body {
-    background: #111111;
-    color: #ffffff;
+    background: #111;
+    color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -30,11 +33,107 @@ header {
     background: #080808;
     padding: 30px 20px;
     text-align: center;
-    border-bottom: 2px solid #e00000;
+    border-bottom: 3px solid #e00000;
 }
 
 .logo {
     max-width: 180px;
     max-height: 180px;
     object-fit: contain;
-    margin
+    margin-bottom: 15px;
+}
+
+.powered {
+    color: #999;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.powered span {
+    color: #e00000;
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 35px;
+    letter-spacing: 5px;
+    margin-top: 15px;
+}
+
+header p {
+    color: #aaa;
+    margin-top: 8px;
+    letter-spacing: 2px;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: #1a1a1a;
+    padding: 17px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #333;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e00000;
+}
+
+/* STARTBEREICH */
+
+.hero {
+    min-height: 400px;
+    background: linear-gradient(
+        135deg,
+        #222,
+        #080808
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content h2 {
+    font-size: 55px;
+    color: #e00000;
+    letter-spacing: 5px;
+}
+
+.hero-content h3 {
+    font-size: 25px;
+    margin-top: 15px;
+    letter-spacing: 3px;
+}
+
+.hero-content p {
+    color: #aaa;
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 30px;
+    background: #e00000;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0
