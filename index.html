@@ -2,135 +2,189 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#10130f">
-<meta name="description" content="Simson S51 – ZT110N Stage 3, 22 PS und 110 km/h.">
-<title>Simson S51 | 110N Stage 3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simson S51 | Project</title>
+
 <style>
-:root{--bg:#10130f;--panel:#191e18;--muted:#a6afa2;--text:#f3f5ef;--green:#b6f34b;--line:#30392c}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,system-ui,sans-serif;line-height:1.6}
-a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
-header{height:76px;display:flex;align-items:center;border-bottom:1px solid #ffffff12;background:#10130fee;position:sticky;top:0;z-index:5;backdrop-filter:blur(14px)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;letter-spacing:.12em}.brand span{color:var(--green)}nav{display:flex;gap:26px;color:#c3cbbd;font-size:14px}nav a:hover{color:var(--green)}
-.hero{min-height:650px;display:grid;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 75% 40%,#b6f34b19,transparent 38%),linear-gradient(120deg,#10130f 20%,#171d14 100%)}
-.hero:after{content:"S51";position:absolute;right:-20px;bottom:-130px;font-size:clamp(240px,40vw,540px);font-weight:1000;letter-spacing:-.1em;color:#ffffff05;line-height:1;pointer-events:none}
-.hero-inner{position:relative;z-index:1;padding:90px 0}.eyebrow,.kicker{color:var(--green);font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
-h1{font-size:clamp(52px,9vw,104px);line-height:.94;letter-spacing:-.07em;margin:18px 0 24px;font-weight:950}h1 span{color:var(--green)}
-.lead{max-width:590px;color:#c0c8ba;font-size:18px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
-.btn{padding:13px 20px;border-radius:5px;font-weight:800;font-size:13px;letter-spacing:.04em;border:1px solid var(--green)}.btn.primary{background:var(--green);color:#11170b}.btn.secondary{color:var(--text);border-color:#687260}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:-1px}.stat{background:var(--panel);padding:25px 30px}.stat strong{display:block;font-size:32px;line-height:1.2}.stat span{color:var(--muted);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
-section{padding:92px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:34px}h2{font-size:clamp(32px,5vw,52px);letter-spacing:-.05em;line-height:1.05;margin:9px 0 0}.sub{color:var(--muted);max-width:430px;margin:0}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{background:var(--panel);border:1px solid var(--line);padding:26px;border-radius:8px}.card h3{margin:0 0 18px;font-size:18px}
-.spec{display:flex;justify-content:space-between;gap:20px;padding:12px 0;border-bottom:1px solid #ffffff12;font-size:14px}.spec:last-child{border:0}.spec span{color:var(--muted)}.spec b{text-align:right}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.about-box{min-height:330px;border:1px solid var(--line);border-radius:8px;background:linear-gradient(145deg,#20291a,#131711);display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;position:relative;overflow:hidden}
-.about-box:before{content:"S51";font-size:clamp(100px,20vw,220px);font-weight:1000;letter-spacing:-.1em;color:#b6f34b12;position:absolute}.placeholder{position:relative;color:#dce5d3;max-width:260px}.placeholder b{display:block;color:var(--green);font-size:13px;letter-spacing:.12em;margin-bottom:8px}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.gallery-item{aspect-ratio:4/3;background:linear-gradient(145deg,#252d20,#151a13);border:1px dashed #59664c;border-radius:7px;display:grid;place-items:center;text-align:center;padding:20px;color:#aab5a0;font-size:13px}.gallery-item strong{display:block;color:var(--green);font-size:12px;letter-spacing:.12em;margin-bottom:5px}
-.timeline{border-left:1px solid #56634b;margin-left:8px;padding-left:26px}.step{position:relative;padding:0 0 28px}.step:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--green);left:-31px;top:8px;box-shadow:0 0 0 5px #b6f34b18}.step b{color:var(--green);font-size:12px;letter-spacing:.1em}.step p{margin:5px 0;color:#c2cabb}
-footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:720px){nav{gap:13px;font-size:12px}.hero{min-height:590px}.hero-inner{padding:70px 0}.stats{grid-template-columns:1fr}.stat{padding:18px 22px}.stat strong{font-size:27px}.grid,.about{grid-template-columns:1fr}.about{gap:25px}section{padding:68px 0}.section-head{display:block}.sub{margin-top:14px}.gallery{grid-template-columns:1fr 1fr}}
-@media(max-width:420px){nav a:nth-child(2){display:none}.gallery{grid-template-columns:1fr}}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #1b1b1b;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 3px solid #e10600;
+}
+
+header h1 {
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+header span {
+    color: #e10600;
+}
+
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #111, #292929);
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #aaa;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.section-title {
+    border-left: 4px solid #e10600;
+    padding-left: 12px;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.stat {
+    background: #202020;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.stat h3 {
+    color: #e10600;
+    font-size: 30px;
+}
+
+.stat p {
+    color: #aaa;
+    margin-top: 8px;
+}
+
+.specs {
+    background: #202020;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+.specs div {
+    padding: 14px 0;
+    border-bottom: 1px solid #333;
+}
+
+.specs div:last-child {
+    border-bottom: none;
+}
+
+.specs strong {
+    color: #e10600;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #1b1b1b;
+    color: #777;
+    border-top: 2px solid #e10600;
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<div class="wrap nav">
-<a class="brand" href="#">S51<span> / </span>PROJECT</a>
-<nav>
-<a href="#projekt">Projekt</a>
-<a href="#setup">Setup</a>
-<a href="#galerie">Galerie</a>
-<a href="#aufbau">Aufbau</a>
-</nav>
-</div>
+    <h1>SIMSON <span>S51</span></h1>
+    <p>MY PROJECT</p>
 </header>
 
-<main>
 <section class="hero">
-<div class="wrap hero-inner">
-<div class="eyebrow">Simson S51 · Umbauprojekt · seit 10/2025</div>
-<h1>OLD SCHOOL.<br><span>NEW POWER.</span></h1>
-<p class="lead">Eine Simson S51, nach eigenen Vorstellungen aufgebaut. Klassische Optik trifft auf einen kräftigen ZT110N Stage 3 Motor – gebaut mit Liebe zum Detail und ordentlich Leistung.</p>
-<div class="actions">
-<a class="btn primary" href="#setup">TECHNISCHE DATEN</a>
-<a class="btn secondary" href="#galerie">ZUM BIKE</a>
-</div>
-</div>
+    <h2>ZT110N <span style="color:#e10600;">STAGE 3</span></h2>
+    <p>Built not bought.</p>
 </section>
 
-<div class="wrap stats">
-<div class="stat"><strong>22 PS</strong><span>Motorleistung</span></div>
-<div class="stat"><strong>15 Nm</strong><span>Drehmoment</span></div>
-<div class="stat"><strong>110 km/h</strong><span>Höchstgeschwindigkeit</span></div>
-</div>
+<div class="container">
 
-<section id="projekt">
-<div class="wrap about">
-<div>
-<div class="kicker">Das Projekt</div>
-<h2>Mehr als nur<br>ein Moped.</h2>
-<p class="lead">Dieses Projekt verbindet den unverwechselbaren Charakter der Simson S51 mit moderner Tuningtechnik. Der Aufbau startete im Oktober 2025. Im Mittelpunkt stehen ein leistungsstarker Motor, sorgfältig abgestimmte Komponenten und ein stimmiges Gesamtbild.</p>
-<p class="sub">Hier wächst die Dokumentation rund um den Umbau – von den verbauten Teilen bis zu den nächsten Änderungen.</p>
-</div>
-<div class="about-box">
-<div class="placeholder"><b>DEIN BIKE</b>Hier kommt ein Foto deiner Simson hin. Sende mir deine Bilder, dann baue ich sie passend ein.</div>
-</div>
-</div>
-</section>
+    <h2 class="section-title">Performance</h2>
 
-<section id="setup" style="background:#141812">
-<div class="wrap">
-<div class="section-head">
-<div><div class="kicker">Hardware & Performance</div><h2>Das Setup.</h2></div>
-<p class="sub">Die aktuell bekannten Komponenten und Leistungsdaten im Überblick.</p>
-</div>
-<div class="grid">
-<div class="card">
-<h3>Motor & Antrieb</h3>
-<div class="spec"><span>Motor</span><b>ZT110N Stage 3</b></div>
-<div class="spec"><span>Auspuff</span><b>ZT Reso Spezial</b></div>
-<div class="spec"><span>Vergaser</span><b>Mikuni VHM 26 mm</b></div>
-</div>
-<div class="card">
-<h3>Leistungsdaten</h3>
-<div class="spec"><span>Leistung</span><b>22 PS</b></div>
-<div class="spec"><span>Drehmoment</span><b>15 Nm</b></div>
-<div class="spec"><span>V-Max</span><b>ca. 110 km/h</b></div>
-</div>
-</div>
-</div>
-</section>
+    <div class="stats">
+        <div class="stat">
+            <h3>22 PS</h3>
+            <p>Leistung</p>
+        </div>
 
-<section id="galerie">
-<div class="wrap">
-<div class="section-head">
-<div><div class="kicker">Impressionen</div><h2>Die Galerie.</h2></div>
-<p class="sub">Platzhalter für Aufnahmen vom fertigen Moped und den Details des Umbaus.</p>
-</div>
-<div class="gallery">
-<div class="gallery-item"><div><strong>01 / BIKE</strong>Gesamtansicht</div></div>
-<div class="gallery-item"><div><strong>02 / ENGINE</strong>Motor & Setup</div></div>
-<div class="gallery-item"><div><strong>03 / DETAILS</strong>Details & Parts</div></div>
-</div>
-</div>
-</section>
+        <div class="stat">
+            <h3>15 Nm</h3>
+            <p>Drehmoment</p>
+        </div>
 
-<section id="aufbau" style="background:#141812">
-<div class="wrap">
-<div class="section-head"><div><div class="kicker">Build story</div><h2>Der Aufbau.</h2></div></div>
-<div class="timeline">
-<div class="step"><b>10 / 2025</b><p>Start des Simson S51 Umbauprojekts.</p></div>
-<div class="step"><b>SETUP</b><p>ZT110N Stage 3, ZT Reso Spezial und Mikuni VHM 26 mm – das aktuelle Motor-Setup.</p></div>
-<div class="step"><b>TO BE CONTINUED</b><p>Weitere Umbauten, Bilder und Updates folgen.</p></div>
+        <div class="stat">
+            <h3>110</h3>
+            <p>KM/H VMAX</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">Setup</h2>
+
+    <div class="specs">
+        <div><strong>Motor:</strong> ZT110N Stage 3</div>
+        <div><strong>Auspuff:</strong> ZT Reso Spezial</div>
+        <div><strong>Vergaser:</strong> Mikuni VHM 26 mm</div>
+        <div><strong>Leistung:</strong> 22 PS / 15 Nm</div>
+        <div><strong>V-Max:</strong> 110 km/h</div>
+        <div><strong>Aufgebaut:</strong> 10/2025</div>
+    </div>
+
+    <h2 class="section-title">Gallery</h2>
+
+    <div class="gallery">
+        <!-- Hier deine Bilder einfügen -->
+    </div>
+
 </div>
-</div>
-</section>
-</main>
 
 <footer>
-<div class="wrap foot">
-<span>© 2026 · SIMSON S51 PROJECT</span>
-<span>Mit Leidenschaft aufgebaut.</span>
-</div>
+    SIMSON S51 PROJECT © 2026
 </footer>
+
 </body>
 </html>
