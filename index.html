@@ -183,4 +183,137 @@ section {
     background: #1b1b1b;
     padding: 25px;
     text-align: center;
-    border-bottom:
+    border-bottom: 3px solid #e00000;
+    transition: 0.3s;
+}
+
+.spec:hover {
+    background: #252525;
+    transform: translateY(-5px);
+}
+
+.spec h3 {
+    color: #e00000;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.spec p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* AUFBAU GALERIE */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.gallery-item {
+    background: #1a1a1a;
+    padding: 10px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    border-color: #e00000;
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.gallery-item p {
+    text-align: center;
+    padding: 15px;
+    color: #aaaaaa;
+}
+
+/* FOOTER */
+
+footer {
+    background: #080808;
+    text-align: center;
+    padding: 35px 20px;
+    border-top: 2px solid #e00000;
+}
+
+footer p {
+    color: #888888;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+footer span {
+    color: #e00000;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .hero-content h2 {
+        font-size: 35px;
+    }
+
+    .hero-content h3 {
+        font-size: 19px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <img src="Screenshot_20260911_194501_ChatGPT.jpg"
+         alt="WP Performance Logo"
+         class="logo">
+
+    <div class="powered">
+        Powered by <span>WP Performance</span>
+    </div>
+
+    <h1>SIMSON S51</h1>
+
+    <p>MY PROJECT</p>
+
+</header>
+
+<!-- NAVIGATION -->
+
+<nav>
+    <a href="#projekt">Projekt</a>
+    <a href="#daten">Technische Daten</a>
+    <a href="#aufbau">Aufbau</a>
+</nav>
+
+<!-- HERO -->
+
+<div class="hero">
+
+    <div class="hero
