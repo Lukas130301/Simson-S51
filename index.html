@@ -3,189 +3,184 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simson S51 | Project</title>
+
+<title>Simson S51 | WP Performance</title>
 
 <style>
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background: #111;
-    color: #fff;
-    font-family: Arial, sans-serif;
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    background: #111111;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
 header {
-    background: #1b1b1b;
-    padding: 25px;
+    background: #080808;
+    padding: 25px 20px;
     text-align: center;
-    border-bottom: 3px solid #e10600;
+    border-bottom: 2px solid #e00000;
+}
+
+.logo {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.powered {
+    color: #999999;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.powered span {
+    color: #e00000;
+    font-weight: bold;
 }
 
 header h1 {
     font-size: 35px;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
+    margin-top: 15px;
 }
 
-header span {
-    color: #e10600;
-}
-
-.hero {
-    padding: 60px 20px;
-    text-align: center;
-    background: linear-gradient(135deg, #111, #292929);
-}
-
-.hero h2 {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    color: #aaa;
-    font-size: 18px;
-}
-
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 30px 20px;
-}
-
-.section-title {
-    border-left: 4px solid #e10600;
-    padding-left: 12px;
-    margin-bottom: 25px;
-    font-size: 26px;
-}
-
-.stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    margin-bottom: 40px;
-}
-
-.stat {
-    background: #202020;
-    padding: 25px;
-    text-align: center;
-    border: 1px solid #333;
-    border-radius: 8px;
-}
-
-.stat h3 {
-    color: #e10600;
-    font-size: 30px;
-}
-
-.stat p {
-    color: #aaa;
+header p {
+    color: #aaaaaa;
     margin-top: 8px;
+    letter-spacing: 2px;
 }
 
-.specs {
-    background: #202020;
-    border-radius: 8px;
-    padding: 25px;
-    margin-bottom: 40px;
-}
+/* NAVIGATION */
 
-.specs div {
-    padding: 14px 0;
+nav {
+    background: #1a1a1a;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     border-bottom: 1px solid #333;
 }
 
-.specs div:last-child {
-    border-bottom: none;
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: 0.3s;
 }
 
-.specs strong {
-    color: #e10600;
+nav a:hover {
+    color: #e00000;
 }
 
-.gallery {
+/* HERO */
+
+.hero {
+    min-height: 400px;
+    background: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.9)
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content h2 {
+    font-size: 55px;
+    color: #e00000;
+    letter-spacing: 5px;
+}
+
+.hero-content h3 {
+    font-size: 25px;
+    margin-top: 15px;
+    letter-spacing: 3px;
+}
+
+.hero-content p {
+    color: #aaaaaa;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 30px;
+    background: #e00000;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #aa0000;
+    transform: scale(1.05);
+}
+
+/* SECTIONS */
+
+section {
+    padding: 70px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.section-title span {
+    color: #e00000;
+}
+
+/* PROJECT */
+
+.project {
+    background: #181818;
+    padding: 30px;
+    border-left: 4px solid #e00000;
+    line-height: 1.8;
+}
+
+.project h3 {
+    color: #e00000;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* TECHNICAL DATA */
+
+.specs {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 
-.gallery img {
-    width: 100%;
-    border-radius: 8px;
-    border: 1px solid #333;
-}
-
-footer {
-    text-align: center;
-    padding: 25px;
+.spec {
     background: #1b1b1b;
-    color: #777;
-    border-top: 2px solid #e10600;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <h1>SIMSON <span>S51</span></h1>
-    <p>MY PROJECT</p>
-</header>
-
-<section class="hero">
-    <h2>ZT110N <span style="color:#e10600;">STAGE 3</span></h2>
-    <p>Built not bought.</p>
-</section>
-
-<div class="container">
-
-    <h2 class="section-title">Performance</h2>
-
-    <div class="stats">
-        <div class="stat">
-            <h3>22 PS</h3>
-            <p>Leistung</p>
-        </div>
-
-        <div class="stat">
-            <h3>15 Nm</h3>
-            <p>Drehmoment</p>
-        </div>
-
-        <div class="stat">
-            <h3>110</h3>
-            <p>KM/H VMAX</p>
-        </div>
-    </div>
-
-    <h2 class="section-title">Setup</h2>
-
-    <div class="specs">
-        <div><strong>Motor:</strong> ZT110N Stage 3</div>
-        <div><strong>Auspuff:</strong> ZT Reso Spezial</div>
-        <div><strong>Vergaser:</strong> Mikuni VHM 26 mm</div>
-        <div><strong>Leistung:</strong> 22 PS / 15 Nm</div>
-        <div><strong>V-Max:</strong> 110 km/h</div>
-        <div><strong>Aufgebaut:</strong> 10/2026-03/2027</div>
-    </div>
-
-    <h2 class="section-title">Aufbau</h2>
-
-    <div class="gallery">
-        <img src="file_000000004c488210b42396b69b793782.png" alt="Simson S51 Aufbau 1">
-        <img src="file_00000000c72881f4826f32223aa16005.png" alt="Simson S51 Aufbau 2">
-    </div>
-
-</div>
-
-<footer>
-    SIMSON S51 PROJECT © 2026
-</footer>
-
-</body>
-</html>
+    padding: 25px;
+    text-align: center;
+    border-bottom:
