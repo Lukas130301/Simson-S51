@@ -22,31 +22,35 @@ html {
 }
 
 body {
-    background: #111;
-    color: #fff;
+    background: #181818;
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
 }
 
 /* HEADER */
 
 header {
-    background: #080808;
+    background: #101010;
     padding: 30px 20px;
     text-align: center;
     border-bottom: 3px solid #e00000;
 }
 
 .logo {
+    display: block;
     max-width: 180px;
     max-height: 180px;
+    width: auto;
+    height: auto;
     object-fit: contain;
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
 }
 
 .powered {
-    color: #999;
+    color: #aaaaaa;
     font-size: 13px;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     text-transform: uppercase;
 }
 
@@ -62,27 +66,27 @@ header h1 {
 }
 
 header p {
-    color: #aaa;
+    color: #aaaaaa;
     margin-top: 8px;
-    letter-spacing: 2px;
 }
 
 /* NAVIGATION */
 
 nav {
-    background: #1a1a1a;
+    background: #242424;
     padding: 17px;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #444;
 }
 
 nav a {
+    display: inline-block;
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 5px 15px;
     font-size: 14px;
     font-weight: bold;
     transition: 0.3s;
@@ -98,8 +102,8 @@ nav a:hover {
     min-height: 400px;
     background: linear-gradient(
         135deg,
-        #222,
-        #080808
+        #383838,
+        #101010
     );
 
     display: flex;
@@ -122,10 +126,9 @@ nav a:hover {
 }
 
 .hero-content p {
-    color: #aaa;
+    color: #cccccc;
     margin-top: 20px;
     font-size: 17px;
-    line-height: 1.6;
 }
 
 .button {
@@ -136,4 +139,343 @@ nav a:hover {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: 0
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #aa0000;
+}
+
+/* ALLGEMEINE SEKTIONEN */
+
+section {
+    padding: 65px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.section-title span {
+    color: #e00000;
+}
+
+/* TECHNISCHE DATEN */
+
+#daten {
+    background: #202020;
+    max-width: 100%;
+}
+
+.data-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.data-box {
+    background: #303030;
+    padding: 22px;
+    border-left: 4px solid #e00000;
+    border-radius: 4px;
+}
+
+.data-box h3 {
+    color: #aaaaaa;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.data-box p {
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+}
+
+.data-box.highlight p {
+    color: #e00000;
+    font-size: 28px;
+}
+
+/* AUFBAU */
+
+#aufbau {
+    background: #181818;
+}
+
+.build-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.build-text {
+    text-align: center;
+    color: #bbbbbb;
+    margin-bottom: 30px;
+}
+
+.build-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.build-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    border: 2px solid #444;
+    transition: 0.3s;
+}
+
+.build-gallery img:hover {
+    border-color: #e00000;
+    transform: scale(1.02);
+}
+
+/* FOOTER */
+
+footer {
+    background: #101010;
+    border-top: 3px solid #e00000;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer p {
+    color: #888888;
+    font-size: 13px;
+}
+
+footer span {
+    color: #e00000;
+    font-weight: bold;
+}
+
+/* SMARTPHONE */
+
+@media (max-width: 650px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    .hero-content h2 {
+        font-size: 38px;
+    }
+
+    .hero-content h3 {
+        font-size: 19px;
+    }
+
+    .data-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .build-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        padding: 10px 5px;
+    }
+
+    nav a {
+        margin: 5px 8px;
+        font-size: 12px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <img
+        src="Screenshot_20260911_194501_ChatGPT.jpg"
+        alt="WP Performance Logo"
+        class="logo"
+    >
+
+    <div class="powered">
+        POWERED BY <span>WP PERFORMANCE</span>
+    </div>
+
+    <h1>SIMSON S51</h1>
+
+    <p>Performance meets Passion</p>
+
+</header>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <a href="#start">START</a>
+
+    <a href="#daten">TECHNISCHE DATEN</a>
+
+    <a href="#aufbau">AUFBAU</a>
+
+</nav>
+
+
+<!-- STARTBEREICH -->
+
+<div class="hero" id="start">
+
+    <div class="hero-content">
+
+        <h2>SIMSON S51</h2>
+
+        <h3>ZT110N STAGE 3</h3>
+
+        <p>
+            Ein kompromissloser Simson-Umbau.<br>
+            Leistung, Technik und Leidenschaft.
+        </p>
+
+        <a href="#daten" class="button">
+            PROJEKT ENTDECKEN
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- TECHNISCHE DATEN -->
+
+<section id="daten">
+
+    <div class="data-container">
+
+        <h2 class="section-title">
+            TECHNISCHE <span>DATEN</span>
+        </h2>
+
+        <div class="data-grid">
+
+            <div class="data-box">
+                <h3>Fahrzeug</h3>
+                <p>Simson S51</p>
+            </div>
+
+            <div class="data-box">
+                <h3>Motor</h3>
+                <p>ZT110N Stage 3</p>
+            </div>
+
+            <div class="data-box">
+                <h3>Auspuff</h3>
+                <p>ZT Reso Spezial</p>
+            </div>
+
+            <div class="data-box">
+                <h3>Vergaser</h3>
+                <p>Mikuni VHM 26 mm</p>
+            </div>
+
+            <div class="data-box highlight">
+                <h3>Leistung</h3>
+                <p>22 PS</p>
+            </div>
+
+            <div class="data-box highlight">
+                <h3>Drehmoment</h3>
+                <p>15 Nm</p>
+            </div>
+
+            <div class="data-box highlight">
+                <h3>Höchstgeschwindigkeit</h3>
+                <p>110 KM/H</p>
+            </div>
+
+            <div class="data-box">
+                <h3>Aufgebaut</h3>
+                <p>10/2025</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- AUFBAU -->
+
+<section id="aufbau">
+
+    <div class="build-container">
+
+        <h2 class="section-title">
+            DER <span>AUFBAU</span>
+        </h2>
+
+        <p class="build-text">
+            Einblicke in den Aufbau und die Entstehung
+            der Simson S51.
+        </p>
+
+        <div class="build-gallery">
+
+            <img
+                src="Aufbau1.png"
+                alt="Simson S51 Aufbau Bild 1"
+                loading="lazy"
+            >
+
+            <img
+                src="Aufbau2.png"
+                alt="Simson S51 Aufbau Bild 2"
+                loading="lazy"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 <span>WP PERFORMANCE</span>
+        | SIMSON S51
+    </p>
+
+    <p>
+        Built with passion.
+    </p>
+
+</footer>
+
+</body>
+</html>
